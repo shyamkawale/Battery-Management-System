@@ -9,60 +9,60 @@ The Amazon Relational Database Services (RDS AWS):
 
 1.Aurora:
 	1. Amazon Aurora is up to five times faster than standard MySQL databases and three times faster than standard PostgreSQL databases. It provides the security, availability, and reliability of commercial databases at 1/10th the cost. 
-       2. Amazon Aurora is designed to offer greater than 99.99% availability, replicating 6 copies of your data across 3 Availability Zones and backing up your data continuously to Amazon S3 which also enables  granular point-in-time recovery
-       3. Amazon Aurora provides multiple levels of security for your database.These includes network isolation using Amazon VPC ,encryption at rest using keys through AWS key management service and encryption of data in transit using SSL.
-	3.  Aurora database engine is fully compatible with existing MySQL and PostgreSQL open source databases
-	4. Storage grows automatically as needed, up to 64 tebibytes (TiB).
-	5. The maximum table size for an Aurora MySQL DB cluster is 64 tebibytes (TiB) and for an Aurora PostgreSQL DB cluster it is 32 TiB.
+        2. Amazon Aurora is designed to offer greater than 99.99% availability, replicating 6 copies of your data across 3 Availability Zones and backing up your data continuously to Amazon S3 which also enables  granular point-in-time recovery
+        3. Amazon Aurora provides multiple levels of security for your database.These includes network isolation using Amazon VPC ,encryption at rest using keys through AWS key management service and encryption of data in transit using SSL.
+	4. Aurora database engine is fully compatible with existing MySQL and PostgreSQL open source databases
+	5. Storage grows automatically as needed, up to 64 tebibytes (TiB).
+	6. The maximum table size for an Aurora MySQL DB cluster is 64 tebibytes (TiB) and for an Aurora PostgreSQL DB cluster it is 32 TiB.
 
 2.MySQL:
 	1. MySQL is the most popular open source SQL database . Often accessed using PHP.
 	2. MySQL has free and paid versions, depending on its usage (non-commercial/commercial) and features. MySQL comes with a very fast, multi-threaded, multi-user and robust SQL database server.
 	3. Easy to use, inexpensive, reliable and has a large community of developers who can help answer questions.
-	4. Replication: MySQL supports a number of different types of replication, which is the practice of sharing information across two or more hosts to help improve reliability, availability, and fault-tolerance. This is helpful for setting up a database backup solution or horizontally scaling oneís database.
-	4. Disadvantages:
+	4. Replication: MySQL supports a number of different types of replication, which is the practice of sharing information across two or more hosts to help improve reliability, availability, and fault-tolerance. This is helpful for setting up a database backup solution or horizontally scaling one‚Äôs database.
+	5. Disadvantages:
 		* Poor performance when scaling.
 		* Open source development has lagged since Oracle has taken control of MySQL.
 		* It does not include some advanced features that developers may be used to.
-       4.  You will be charged for each hour your DB Instance is running. Each DB Instance will run until termination, which occurs when you issue an API call to delete the DB Instance, or in the event of an instance failure. Partial DB Instance hours consumed are billed as full hours.In addition to DB Instance hours, you are also billed for your monthly storage, I/O requests,and backups. If you scale your storage capacity within the billing period, your bill will be pro-rated accordingly.
+        6.  You will be charged for each hour your DB Instance is running. Each DB Instance will run until termination, which occurs when you issue an API call to delete the DB Instance, or in the event of an instance failure. Partial DB Instance hours consumed are billed as full hours.In addition to DB Instance hours, you are also billed for your monthly storage, I/O requests,and backups. If you scale your storage capacity within the billing period, your bill will be pro-rated accordingly.
 
 3. PostgreSQL:
 	1. PostgreSQL is an open source , object-relational  SQL database that is not controlled by any corporation
-       2. It is an advanced version of  SQL which provides support to different functions of SQL like foreign keys, subqueries, triggers, and different user-defined types and functions.
+        2. It is an advanced version of  SQL which provides support to different functions of SQL like foreign keys, subqueries, triggers, and different user-defined types and functions.
 	3. It is capable of efficiently handling multiple tasks at the same time, a characteristic known as concurrency.
-       4. It is easy to use, inexpensive, reliable and has a large community of developers.
-       5. Some additional feature such as foreign key support without requiring complex configuration.
-       6. Third-party tools and libraries designed to simplify working with with PostgreSQL, including pgAdmin and Postbird.
-       7.Push-button scaling:
-       DB Instance Class ñ Using the Amazon RDS APIs or a few clicks of the AWS Management Console, you can scale the compute and memory resources powering your deployment up or down. Scaling operations typically complete within a handful of minutes.
-        Storage and IOPS ñ As your storage requirements grow you can provision additional storage on-the-fly with zero downtime. If you are using RDS Provisioned IOPS, you can also scale the throughput of your DB Instance by specifying the IOPS rate from 1,000 IOPS to 80,000 
-       IOPS in 1,000 IOPS increments and storage from 100 GB and 64TB.
+        4. It is easy to use, inexpensive, reliable and has a large community of developers.
+        5. Some additional feature such as foreign key support without requiring complex configuration.
+        6. Third-party tools and libraries designed to simplify working with with PostgreSQL, including pgAdmin and Postbird.
+        7. Push-button scaling:
+           DB Instance Class ‚Äì Using the Amazon RDS APIs or a few clicks of the AWS Management Console, you can scale the compute and memory resources powering your deployment up or down. Scaling operations typically complete within a handful of minutes.
+           Storage and IOPS ‚Äì As your storage requirements grow you can provision additional storage on-the-fly with zero downtime. If you are using RDS Provisioned IOPS, you can also scale the throughput of your DB Instance by specifying the IOPS rate from 1,000 IOPS to 80,000 
+           IOPS in 1,000 IOPS increments and storage from 100 GB and 64TB.
 4. Oracle:
-	1.Oracle Corporation owns Oracle Database, and the code is not open sourced.	
-	2. Oracle DB is for large applications, particularly in the banking industry. Most of the worldís top banks run Oracle applications because Oracle offers a powerful combination of technology and comprehensive, pre-integrated business applications, including essential functionality built specifically for banks.
-	3.Disadvantages:
+	1. Oracle Corporation owns Oracle Database, and the code is not open sourced.	
+	2. Oracle DB is for large applications, particularly in the banking industry. Most of the world‚Äôs top banks run Oracle applications because Oracle offers a powerful combination of technology and comprehensive, pre-integrated business applications, including essential functionality built specifically for banks.
+	3. Disadvantages:
 		* It is expensive.
 		* Code is not Open Sourced i.e  it is not free to use.
-  	4. Push-button scaling
-	DB Instance Class ñ Using the Amazon RDS APIs or a few clicks of the AWS Management Console, you can scale the compute and memory resources powering your deployment up or down. Scaling operations typically complete within a handful of minutes.
-       Storage and IOPS ñ As your storage requirements grow you can provision additional storage on-the-fly with zero downtime. If you are using RDS Provisioned IOPS, you can also scale the throughput of your DB Instance by specifying the IOPS rate from 1,000 IOPS to 40,000 
-	IOPS in 1,000 IOPS increments and storage from 100 GB and 16 TB.
+  	4. Push-button scaling:
+	   DB Instance Class ‚Äì Using the Amazon RDS APIs or a few clicks of the AWS Management Console, you can scale the compute and memory resources powering your deployment up or down. Scaling operations typically complete within a handful of minutes.
+           Storage and IOPS ‚Äì As your storage requirements grow you can provision additional storage on-the-fly with zero downtime. If you are using RDS Provisioned IOPS, you can also scale the throughput of your DB Instance by specifying the IOPS rate from 1,000 IOPS to 40,000 
+	   IOPS in 1,000 IOPS increments and storage from 100 GB and 16 TB.
 
 
 5.SQlite:
 	1. SQLite is a popular open source SQL database. It can store an entire database in a single file(portable).
-	2. . One of the most significant advantages this provides is that all of the data can be stored locally without having to connect your database to a server.
-	3. SQLite library is very lightweight. Although the space it uses varies depending on the system where itís installed, it can take up less than 600KiB of space.
-	4. SQLite is sometimes described as a ìzero-configurationî database. It doesnít run as a server process, which means that it never needs to be stopped, started, or restarted and doesnít come with any configuration files that need to be managed. These features help to streamline the path from installing SQLite to integrating it with an application.	
-       5. SQLite is a popular choice for databases in cellphones, PDAs, MP3 players, set-top boxes, and other electronic gadgets.
-       6.Disadvantages:
+	2. One of the most significant advantages this provides is that all of the data can be stored locally without having to connect your database to a server.
+	3. SQLite library is very lightweight. Although the space it uses varies depending on the system where it‚Äôs installed, it can take up less than 600KiB of space.
+	4. SQLite is sometimes described as a ‚Äúzero-configuration‚Äù database. It doesn‚Äôt run as a server process, which means that it never needs to be stopped, started, or restarted and doesn‚Äôt come with any configuration files that need to be managed. These features help to streamline the path from installing SQLite to integrating it with an application.	
+        5. SQLite is a popular choice for databases in cellphones, PDAs, MP3 players, set-top boxes, and other electronic gadgets.
+        6. Disadvantages:
 		* Only one process can make changes to the database at any given time. This means SQLite supports greater concurrency than most other embedded database management systems, but not as much as client/server RDBMSs like MySQL or PostgreSQL.
 
 6. MariaDB:
-	1.MariaDB is a community-developed, commercially supported fork of the MySQL relational database management system (RDBMS), intended to remain free and open-source software under the GNU General Public License.	
+	1. MariaDB is a community-developed, commercially supported fork of the MySQL relational database management system (RDBMS), intended to remain free and open-source software under the GNU General Public License.	
 	2. They automatically update indices.
-       3.Push-button scaling
-	Storage and IOPS
-	As your storage requirements grow you can provision additional storage on-the-fly with zero downtime. If you are using RDS Provisioned IOPS, you can also scale the throughput of your DB Instance by specifying the IOPS rate from 1,000 IOPS to 80,000 IOPS in 1,000 IOPS increments and storage from 100GB to 64TB.
+        3. Push-button scaling
+	   Storage and IOPS
+	   As your storage requirements grow you can provision additional storage on-the-fly with zero downtime. If you are using RDS Provisioned IOPS, you can also scale the throughput of your DB Instance by specifying the IOPS rate from 1,000 IOPS to 80,000 IOPS in 1,000 IOPS increments and storage from 100GB to 64TB.
 	4. You can scale your Amazon RDS for MariaDB instances up to 32 vCPUs and 244GiB Memory. You can also add up to 6 read replicas to further scale read capacity. 
-	5.You can provision up to 16TB of storage and 40,000 IOPS per database and select instances with up to 32 vCPUs and 244 GiB of memory.
+	5. You can provision up to 16TB of storage and 40,000 IOPS per database and select instances with up to 32 vCPUs and 244 GiB of memory.
